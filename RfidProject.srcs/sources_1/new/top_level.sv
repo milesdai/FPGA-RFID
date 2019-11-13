@@ -5,7 +5,7 @@ module top_level(
     
     logic [26:0] counter = 27'b0;
     always_ff @(posedge clk_100mhz) begin
-        counter <= counter + 1;
+        counter <= counter + 2;
     end
     
     assign led[0] = counter[26];
